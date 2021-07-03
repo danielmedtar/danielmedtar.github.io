@@ -1,0 +1,88 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $amarillo;
+    margin-top: 57px;
+}
+@media (min-width: 992px) {
+    main {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+.avatar {
+    width: 400px;
+    height: 400px;
+    margin-bottom: 30px;
+}
+
+@media (min-width: 992px) {
+    .avatar {
+        width: 600px;
+        height: 600px;
+        margin-bottom: 0;
+    }
+}
+.texto-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+@media (min-width: 992px) {
+    .texto-main {
+        margin-right: 150px;
+    }
+}
+h1 {
+    font-family: $titulos;
+    font-weight: 500;
+    font-size: 6rem;
+    margin-bottom: 0;
+    color: $negro;
+    text-decoration: underline 5px $blanco;
+}
+@media (min-width: 992px) {
+    h1 {
+        font-size: 8.5rem;
+    }
+}
+.parrafo-main {
+    font-family: $parrafos;
+    font-weight: 100;
+    font-style: italic;
+    font-size: 3rem;
+    margin-top: -15px;
+    color: $negro;
+}
+@media (min-width: 992px) {
+    .parrafo-main {
+        font-size: 4rem;
+        margin-top: -20px;
+    }    
+}
+
+button {
+    background-color: $blanco;
+    border: none;
+    padding: 10px 20px;
+    margin-bottom: 40px;
+    a {
+        color: $negro;
+        font-family: $parrafos;
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+    a:hover {
+        color: $verde;
+        text-decoration: none;
+    }
+    
+}
+@media (min-width: 992px) {
+    button {
+        margin-bottom: 0;
+    }
+}
