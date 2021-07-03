@@ -14,24 +14,25 @@
     <title>Daniel Medina | Portfolio</title>
 </head>
 <body>
-    <header id="home">
+    <header>
         <div class="container-header">
             <nav>
                 <div class="nav-wrapper">
-                  <a href="#!" class="brand-logo">Logo</a>
-                  <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                  <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons"><span class="iconify" data-icon="ci:hamburger" data-inline="false"></span></i></a>
                   <ul class="right hide-on-med-and-down">
-                    <li><a href="sass.html">Sass</a></li>
-                    <li><a href="badges.html">Components</a></li>
-                    <li><a href="collapsible.html">Javascript</a></li>
-                    <li><a href="mobile.html">Mobile</a></li>
+                    <li><a class="enlaces" href="#home">Subir</a></li>
+                    <li><a class="enlaces" href="#sobre-mi">Sobre mi</a></li>
+                    <li><a class="enlaces" href="#que-hago">¿Qué hago?</a></li>
+                    <li><a class="enlaces" href="collapsible.html">Javascript</a></li>
+                    <li><a class="enlaces" href="mobile.html">Mobile</a></li>
                   </ul>
                 </div>
               </nav>
             
               <ul class="sidenav" id="mobile-demo">
-                <li><a href="sass.html">Sass</a></li>
-                <li><a href="badges.html">Components</a></li>
+                <li><a class="enlaces" href="#home">Subir</a></li>
+                <li><a href="#sobre-mi">Sobre mi</a></li>
+                <li><a href="#que-hago">¿Qué Hago?</a></li>
                 <li><a href="collapsible.html">Javascript</a></li>
                 <li><a href="mobile.html">Mobile</a></li>
               </ul>
@@ -39,7 +40,7 @@
     </header>
 
 
-    <main>
+    <main id="home">
         <img src="img/foto_prueba3.png" alt="avatar-daniel" class="avatar animate__animated animate__zoomIn">
         <div class="texto-main">
             <h1 class="animate__animated animate__fadeInLeft">Daniel Medina</h1>
@@ -52,7 +53,7 @@
     </main>
 
     <section id="sobre-mi" class="padding-section sobre-mi">
-        <div class="container container-secciones">
+        <div class="container-secciones">
                 <h2>Sobre mi</h2>
             <div class="container-secciones__textos">
                 <p>Desde el año 2020 comencé a estudiar todo lo concerniente al Desarrollo Web Front End. He realizado diversos cursos sobre las tecnologías más demandadas en la actualidad, dentro de las cuales destacan: HTML, CSS y JavaScript.</p>
@@ -62,7 +63,7 @@
     </section>
 
     <section id="que-hago" class="padding-section servicios">
-        <div class="container container-secciones">
+        <div class="container-secciones">
             <h2>¿Qué hago?</h2>
             <div class="container-secciones__textos">
                 <p>Entre las tecnologías con las que más he trabajado están: HTML 5, CSS3, JavaScript, jQuery, Bootstrap y SASS para todo lo relacionado con el desarrollo; GIT para control de versiones, y Github como repositorio de código on-line.</p>
@@ -74,6 +75,9 @@
                     <a class="carousel-item" href="#three!"><img src="img/javascript.svg"></a>
                     <a class="carousel-item" href="#four!"><img src="img/jquery.svg"></a>
                     <a class="carousel-item" href="#five!"><img src="img/file-type-scss.svg"></a>
+                    <a class="carousel-item" href="#six!"><img src="img/bootstrap.svg"></a>
+                    <a class="carousel-item" href="#seven!"><img src="img/git.svg"></a>
+                    <a class="carousel-item" href="#eigth!"><img src="img/github-octocat.svg"></a>
                 </div>
 
             </div>

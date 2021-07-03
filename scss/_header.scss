@@ -1,35 +1,26 @@
+nav {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background-color: $blanco;
+}
+
 #navbarNav {
     background-color: $blanco!important;
     width: 100%;
     padding: 10px;
 }
 
-.navbar {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    padding: 0;
-    justify-content: flex-end;
-}
-
-.navbar-light .navbar-nav .nav-link {
+.enlaces {
     font-size: 2rem;
     color: $negro;
     font-family: $parrafos;
 }
 
-.navbar-light .navbar-nav .nav-link:hover {
-    color: $amarillo;
+.enlaces:hover {
+    background-color: $amarillo;
 }
-.navbar-light .navbar-toggler {
-    border: none;
-}
-.menu {
-    font-size: 3rem;
+
+.sidenav-trigger {
     color: $negro;
-}
-@media (min-width: 992px) {
-    .nav-item {
-        margin-right: 60px;
-    }
 }
