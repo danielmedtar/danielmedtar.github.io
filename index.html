@@ -66,7 +66,7 @@
         <div class="container-secciones">
             <h2>¿Qué hago?</h2>
             <div class="container-secciones__textos">
-                <p>Entre las tecnologías con las que más he trabajado están: HTML 5, CSS3, JavaScript, jQuery, Bootstrap y SASS para todo lo relacionado con el desarrollo; GIT para control de versiones, y Github como repositorio de código on-line.</p>
+                <p>Entre las tecnologías con las que más he trabajado están: HTML 5, CSS3, JavaScript, jQuery, Bootstrap, Materialize y SASS para todo lo relacionado con el desarrollo; GIT para control de versiones, y Github como repositorio de código on-line.</p>
             
             
                 <div class="carousel">
@@ -78,11 +78,26 @@
                     <a class="carousel-item" href="#six!"><img src="img/bootstrap.svg"></a>
                     <a class="carousel-item" href="#seven!"><img src="img/git.svg"></a>
                     <a class="carousel-item" href="#eigth!"><img src="img/github-octocat.svg"></a>
+                    <a class="carousel-item" href="#nine!"><img src="img/materializecss.svg"></a>
                 </div>
 
             </div>
         </div>
     </section>
+
+    <section id="mis-trabajos" class="padding-section sobre-mi">
+      <div class="container-secciones">
+              <h2>Mis <br>proyectos</h2>
+          <div class="container-secciones__textos">
+            <p>Estos son algunos de los proyectos que he desarrollado:</p>
+            <div id="carousel-trabajos" class="carousel carousel-slider center">             
+
+            </div>
+
+          </div>
+      </div>
+  </section>
+
 
     <div class="fixed-action-btn">
         <a class="btn-floating btn-large red">
@@ -95,8 +110,6 @@
           <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
         </ul>
       </div>
-
-
 
 
 <!-- MATERIALIZE -->
@@ -120,11 +133,25 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 </script>
 
+<script>
+    var instance = M.Carousel.init({
+    fullWidth: true
+  });
+
+</script>
+
 <script src="js/wow.min.js"></script>
               <script>
               new WOW().init();
               </script>
 
 <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+<script src="js/proyectos.js"></script>
+<script src="js/index.js"></script>
+
 </body>
 </html>

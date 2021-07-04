@@ -1,0 +1,59 @@
+#carousel-trabajos {
+    width: 100%;
+    height: 400px;
+}
+@media (min-width: 992px) {
+    #carousel-trabajos {
+        height: 600px;
+    }
+}
+
+.img-portfolio {
+    max-width: 100%;
+    height: 200px;
+}
+@media (min-width: 992px) {
+.img-portfolio {
+        width: 80%;
+        height: 600px;
+    }
+}
+.card_proyectos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.proyecto-nombre,
+.proyecto-techs {
+    text-align: center;
+    font-size: 2rem;
+    font-family: $parrafos;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.container-botones {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 60px;
+}
+.boton-link {
+    background-color: $amarillo;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.boton-link a {
+    color: $negro;
+    font-size: 1.6rem;
+}
+@media (min-width: 992px) {
+    .boton-link a {
+        font-size: 2rem;
+    }
+}
+.boton-link a:hover {
+    color: unset;
+}
