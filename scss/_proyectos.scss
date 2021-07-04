@@ -1,53 +1,41 @@
-#carousel-trabajos {
-    width: 100%;
-    height: 400px;
-}
-@media (min-width: 992px) {
-    #carousel-trabajos {
-        height: 600px;
-    }
+.slider {
+    z-index: 0;
 }
 
-.img-portfolio {
-    max-width: 100%;
-    height: 200px;
+.slider .slides li img {
+    height: 600px;
 }
-@media (min-width: 992px) {
-.img-portfolio {
-        width: 80%;
-        height: 600px;
-    }
-}
-.card_proyectos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+
 
 .proyecto-nombre,
 .proyecto-techs {
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-family: $parrafos;
     font-weight: 700;
     margin-bottom: 10px;
+    color: $blanco;
 }
-
+@media (min-width: 992px) {
+    .proyecto-nombre,
+    .proyecto-techs {
+        font-size: 2rem;
+    }
+}
 .container-botones {
     display: flex;
     justify-content: center;
     gap: 30px;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
 }
 .boton-link {
     background-color: $amarillo;
     border-radius: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 0;
 }
 .boton-link a {
     color: $negro;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
 }
 @media (min-width: 992px) {
     .boton-link a {
@@ -56,4 +44,18 @@
 }
 .boton-link a:hover {
     color: unset;
+}
+
+.slider .slides li {
+    top: unset;
+}
+
+.slider .slides li img {
+    background-position: center center;
+}
+
+.slider .slides li .caption {
+    background-color: $gris-opaco;
+    
+
 }

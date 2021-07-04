@@ -13,5 +13,9 @@
   "devDependencies": {
     "node-sass": "^6.0.0",
     "nodemon": "^2.0.7"
+  },
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "wow.js": "^1.2.2"
   }
 }

@@ -4,13 +4,6 @@ nav {
     z-index: 1;
     background-color: $blanco;
 }
-
-#navbarNav {
-    background-color: $blanco!important;
-    width: 100%;
-    padding: 10px;
-}
-
 .enlaces {
     font-size: 2rem;
     color: $negro;
@@ -20,7 +13,14 @@ nav {
 .enlaces:hover {
     background-color: $amarillo;
 }
-
+.sidenav {
+    width: 200px;
+}
 .sidenav-trigger {
     color: $negro;
+}
+.right {
+    float: unset!important;
+    display: flex;
+    justify-content: center;
 }

@@ -1,4 +1,4 @@
-const contenedorProyectos = $('#carousel-trabajos')
+const contenedorProyectos = $('#container-proyectos')
 
 muestraProyectos(proyectos)
 
@@ -7,22 +7,21 @@ function muestraProyectos(proyectos) {
         for(const proyecto of proyectos) {
             contenedorProyectos.append(`
 
-            <div class="carousel-item">
-                <div class="card_proyectos">
-                    <p class="proyecto-nombre">${proyecto.nombre}</p>
-                    <p class="proyecto-techs">${proyecto.Techs}</p>  
+            <li>
+                <img class="img-portfolio" src="${proyecto.img}">
+                <div class="caption center-align">
+                <h3 class="proyecto-nombre">${proyecto.nombre}</h3>
+                <h5 class="proyecto-techs">${proyecto.Techs}</h5>
                     <div class="container-botones">    
                         <button class="boton-link">
                             <a href="${proyecto.linkSitio}" target="_blank">Ir al sitio</a>
                         </button>
-
                         <button class="boton-link">
                             <a href="${proyecto.linkGithub}" target="_blank">Ir al código</a>
                         </button>   
                     </div>
-                    <img class="img-portfolio" src=${proyecto.img} alt="proyecto">
                 </div>
-            </div>            
+            </li>
             `                    
         )}
 }

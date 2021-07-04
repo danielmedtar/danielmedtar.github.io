@@ -1,0 +1,24 @@
+.botones-contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@media (min-width: 768px) {
+    .botones-contacto {
+        flex-direction: row;
+        gap: 20px;
+    }
+}
+.botones-contacto button {
+    margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+    .botones-contacto button {
+        margin-bottom: 0;
+        
+    }
+}
+.botones-contacto button:last-child {
+    margin-bottom: 0;
+}
