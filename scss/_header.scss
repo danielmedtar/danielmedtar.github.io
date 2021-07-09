@@ -19,8 +19,9 @@ nav {
 .sidenav-trigger {
     color: $negro;
 }
-.right {
-    float: unset!important;
+
+
+.contenedor-enlaces {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }

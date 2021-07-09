@@ -85,10 +85,9 @@ nav {
 .sidenav-trigger {
   color: #202030; }
 
-.right {
-  float: unset !important;
+.contenedor-enlaces {
   display: flex;
-  justify-content: center; }
+  justify-content: space-around; }
 
 main {
   display: flex;
