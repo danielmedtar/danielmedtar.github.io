@@ -22,4 +22,13 @@
 .botones-contacto button:last-child {
     margin-bottom: 0;
 }
-
+.subir {
+    display: flex;
+    background-color: $amarillo;
+    padding: 10px;
+    border-radius: 50%;
+}
+.subir .flecha {
+    font-size: 3rem;
+    color: $negro;
+}

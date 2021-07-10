@@ -9,18 +9,12 @@ nav {
     color: $negro;
     font-family: $parrafos;
 }
-
-.enlaces:hover {
-    background-color: $amarillo;
-}
 .sidenav {
     width: 200px;
 }
 .sidenav-trigger {
     color: $negro;
 }
-
-
 .contenedor-enlaces {
     display: flex;
     justify-content: space-around;

@@ -9,7 +9,7 @@ function muestraProyectos(proyectos) {
 
             <li>
                 <img class="img-portfolio" src="${proyecto.img}" alt="${proyecto.alt}">
-                <div class="caption center-align">
+                <div class="caption">
                 <h3 class="proyecto-nombre">${proyecto.nombre}</h3>
                 <h5 class="proyecto-techs">${proyecto.Techs}</h5>
                     <div class="container-botones">    
