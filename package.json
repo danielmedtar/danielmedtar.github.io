@@ -17,5 +17,13 @@
   "dependencies": {
     "animate.css": "^4.1.1",
     "wow.js": "^1.2.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielmedtar/porfolio_1.git"
+  },
+  "bugs": {
+    "url": "https://github.com/danielmedtar/porfolio_1/issues"
+  },
+  "homepage": "https://github.com/danielmedtar/porfolio_1#readme"
 }
