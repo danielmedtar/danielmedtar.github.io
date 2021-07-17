@@ -73,7 +73,10 @@ p {
     }
 }
 .container-secciones {
-    @extend %flex-columnCentrado;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 @media (min-width: 992px) {

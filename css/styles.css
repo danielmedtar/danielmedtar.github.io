@@ -60,6 +60,13 @@ p {
     padding: 50px;
   }
 }
+.container-secciones {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 @media (min-width: 992px) {
   .container-secciones {
     display: grid;
@@ -86,7 +93,7 @@ p {
   font-size: 2.5rem;
 }
 
-.botones-contacto, .slider .slides li .caption, .texto-main, main, .container-secciones {
+.botones-contacto, .slider .slides li .caption, .texto-main, main {
   display: flex;
   flex-direction: column;
   align-items: center;
