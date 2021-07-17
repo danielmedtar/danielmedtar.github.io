@@ -1,8 +1,5 @@
 .botones-contacto {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @extend %flex-columnCentrado;
 }
 @media (min-width: 768px) {
     .botones-contacto {
