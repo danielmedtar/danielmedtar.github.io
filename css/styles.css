@@ -342,4 +342,11 @@ button a:hover {
   color: #202030;
 }
 
+footer p {
+  text-align: center;
+}
+footer a {
+  color: #202030;
+}
+
 /*# sourceMappingURL=styles.css.map */
