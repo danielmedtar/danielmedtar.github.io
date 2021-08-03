@@ -311,6 +311,37 @@ button a:hover {
   width: 100%;
 }
 
+.testimonios {
+  display: flex;
+}
+
+blockquote {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-color: #F9C80E;
+  margin-bottom: 60px;
+}
+
+@media (min-width: 992px) {
+  blockquote {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 4fr;
+    gap: 40px;
+  }
+}
+q {
+  font-size: 1.8rem;
+}
+
+.img-testimonio {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
 @media (min-width: 768px) {
   .botones-contacto {
     flex-direction: row;
@@ -319,6 +350,7 @@ button a:hover {
 }
 .botones-contacto button {
   margin-bottom: 20px;
+  background-color: #F9C80E;
 }
 
 @media (min-width: 768px) {
@@ -342,6 +374,10 @@ button a:hover {
   color: #202030;
 }
 
+footer {
+  margin: 0;
+  padding: 20px 0;
+}
 footer p {
   text-align: center;
 }

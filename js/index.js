@@ -25,3 +25,22 @@ function muestraProyectos(proyectos) {
             `                    
         )}
 }
+
+const contenedorTestimonios = $('#container-testimonios')
+
+muestraTestimonios(testimonios)
+
+function muestraTestimonios(testimonios) {
+        
+    for(const testimonio of testimonios) {
+        contenedorTestimonios.append(`
+         <blockquote>
+            <a href="${testimonio.link}" target="_blank">
+                <img class="img-testimonio" src="${testimonio.img}" alt="${testimonio.alt}">
+            </a>
+             <h3>${testimonio.nombre}</h3>             
+             <q>${testimonio.palabras}</q>
+         </blockquote>
+         `                    
+    )}
+}
