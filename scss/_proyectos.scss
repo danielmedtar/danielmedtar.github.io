@@ -1,12 +1,30 @@
-.slider {
-    z-index: 0;
+#container-proyectos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@media (min-width: 992px) {
+    #container-proyectos {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
 }
 
-.slider .slides li img {
-    height: 600px;
+.card-proyectos {
+    @extend %flex-columnCentrado;
+    margin-bottom: 30px;
+    &:last-of-type {
+        margin-bottom: 0;
+    }
 }
 
-
+@media (min-width: 992px) {
+    .card-proyectos:last-of-type {
+        margin: 0 auto;
+    }
+}
 .proyecto-nombre,
 .proyecto-techs {
     text-align: center;
@@ -14,10 +32,8 @@
     font-family: $parrafos;
     font-weight: 700;
     width: 100%;
-    margin-bottom: 10px;
-    background-color: $gris-opaco;
-    color: $blanco;
-    padding: 10px;
+    margin-bottom: 20px;
+    color: $negro;
 }
 @media (min-width: 992px) {
     .proyecto-nombre,
@@ -25,16 +41,11 @@
         font-size: 2rem;
     }
 }
-.container-botones {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-bottom: 20px;
-}
+
 .boton-link {
     background-color: $amarillo;
     border-radius: 20px;
-    margin-bottom: 0;
+    margin-top: 20px;
 }
 .boton-link a {
     color: $negro;
@@ -49,19 +60,15 @@
     color: unset;
 }
 
-.slider .slides li {
-    top: unset;
+.img-portfolio {
+    width: 450px;
+    height: 250px;
 }
 
-.slider .slides li img {
-    background-position: center center;
+@media (min-width: 1200px) {
+    .img-portfolio {
+        width: 500px;
+        height: 300px;
+    }
 }
 
-.slider .slides li .caption {
-    @extend %flex-columnCentrado;
-    background-color: $gris-opaco;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-}
