@@ -31,7 +31,7 @@ function muestraTestimonios(testimonios) {
         
     for(const testimonio of testimonios) {
         contenedorTestimonios.append(`
-        <blockquote>
+        <blockquote class="wow animate__animated animate__zoomIn">
             <a href="${testimonio.link}" target="_blank">
                 <img class="img-testimonio" src="${testimonio.img}" alt="${testimonio.alt}">
             </a>
