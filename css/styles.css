@@ -250,19 +250,20 @@ button a:hover {
 
 @media (min-width: 992px) {
   #container-proyectos {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
   }
-}
-.card-proyectos {
-  margin-bottom: 30px;
 }
 .card-proyectos:last-of-type {
   margin-bottom: 0;
 }
 
 @media (min-width: 992px) {
+  .card-proyectos:nth-child(odd) {
+    margin-left: 80px;
+  }
+
   .card-proyectos:last-of-type {
     margin: 0 auto;
   }
