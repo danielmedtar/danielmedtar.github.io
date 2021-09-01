@@ -297,6 +297,11 @@ button a:hover {
     font-size: 2rem;
   }
 }
+.container-botones {
+  display: flex;
+  gap: 30px;
+}
+
 .boton-link {
   background-color: #F9C80E;
   border-radius: 20px;

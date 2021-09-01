@@ -13,9 +13,14 @@ function muestraProyectos(proyectos) {
                     <img class="img-portfolio" src="${proyecto.img}" alt="${proyecto.alt}">
                 </a>
                     
-                <button class="boton-link">
-                    <a href="${proyecto.linkGithub}" target="_blank">Ir al código</a>
-                </button>   
+                <div class="container-botones">
+                    <button class="boton-link">
+                        <a href="${proyecto.linkSitio}" target="_blank">Ir al Sitio</a>
+                    </button>   
+                    <button class="boton-link">
+                        <a href="${proyecto.linkGithub}" target="_blank">Ir al código</a>
+                    </button>   
+                </div>
                     
             </div>
             

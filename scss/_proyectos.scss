@@ -44,7 +44,10 @@
         font-size: 2rem;
     }
 }
-
+.container-botones {
+    display: flex;
+    gap: 30px;
+}
 .boton-link {
     background-color: $amarillo;
     border-radius: 20px;
