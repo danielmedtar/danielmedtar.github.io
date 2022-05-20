@@ -1,0 +1,21 @@
+nav {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background-color: $blanco;
+}
+.enlaces {
+    font-size: 2rem;
+    color: $negro;
+    font-family: $parrafos;
+}
+.sidenav {
+    width: 200px;
+}
+.sidenav-trigger {
+    color: $negro;
+}
+.contenedor-enlaces {
+    display: flex;
+    justify-content: space-around;
+}

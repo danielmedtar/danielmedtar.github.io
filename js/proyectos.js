@@ -1,0 +1,7 @@
+let proyectos = [
+    {nombre: "Aneplanner - Community Manager", Techs: "HTML5, CSS3, Bootstrap, SASS, GIT", img: 'img/aneplanner.png', linkSitio: 'https://danielmedtar.github.io/Aneplanner/', linkGithub: 'https://github.com/danielmedtar/Aneplanner', alt: 'imagen aneplanner'},
+    {nombre: "Developer Shop", Techs: "HTML5, CSS3, Bootstrap, JavaScript, jQuery", img: 'img/developer_shop.png', linkSitio: 'https://danielmedtar.github.io/final_coderjs/', linkGithub: 'https://github.com/danielmedtar/final_coderjs', alt: 'imagen devshop'},
+    {nombre: "App Clima", Techs: "HTML5, CSS3, JavaScript, API Open Weather", img: 'img/app_clima.png', linkSitio: 'https://danielmedina-appclima.netlify.app', linkGithub: 'https://github.com/danielmedtar/app_clima', alt: 'imagen app clima'},
+    {nombre: "Lista de Tareas", Techs: "HTML5, CSS3, JavaScript", img: 'img/todolist.png', linkSitio: 'https://danielmedtar.github.io/todolist/', linkGithub: 'https://github.com/danielmedtar/todolist', alt: 'imagen lista de tareas'},
+    {nombre: "Calculadora", Techs: "HTML5, CSS3, JavaScript", img: 'img/calculadora.png', linkSitio: 'https://danielmedtar.github.io/Calculadora-JS/', linkGithub: 'https://github.com/danielmedtar/Calculadora-JS', alt: 'imagen calculadora'}
+]

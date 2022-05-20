@@ -1,0 +1,20 @@
+.carousel-tech {
+    height: 200px;
+}
+.carousel-tech .carousel-item>img {
+        width: 150px;
+        height: 150px;
+    }
+@media (min-width: 768px) {
+    .carousel-tech {
+        height: 200px;
+    }
+}
+.btn-floating {
+    background-color: unset;
+    box-shadow: none;
+}
+
+.btn-floating:hover {
+    background-color: unset;
+}
