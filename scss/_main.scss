@@ -63,7 +63,6 @@ h1 {
 button {
     background-color: $blanco;
     border: none;
-    margin-bottom: 40px;
     border-radius: 20px;
     a {
         display: block;
@@ -82,5 +81,19 @@ button {
 @media (min-width: 992px) {
     button {
         margin-bottom: 0;
+    }
+}
+
+.container-botones_cv {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+@media (min-width: 1080px) {
+    .container-botones_cv {
+        flex-direction: row;
+        justify-content: space-between;
     }
 }

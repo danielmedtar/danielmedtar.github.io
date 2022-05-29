@@ -1,3 +1,7 @@
+.container-secciones__textos-contacto {
+    @extend %flex-columnCentrado;
+}
+
 .botones-contacto {
     @extend %flex-columnCentrado;
 }
@@ -29,4 +33,49 @@
 .subir .flecha {
     font-size: 3rem;
     color: $negro;
+}
+
+form {
+    @extend %flex-columnCentrado;
+    width: 50%;
+}
+
+form label {
+    font-size: 18px;
+}
+
+form input {
+    margin-top: 10px;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+}
+
+::placeholder {
+    font-size: 14px;
+}
+
+input:not([type]):focus:not([readonly])+label, input[type=text]:not(.browser-default):focus:not([readonly])+label, input[type=password]:not(.browser-default):focus:not([readonly])+label, input[type=email]:not(.browser-default):focus:not([readonly])+label, input[type=url]:not(.browser-default):focus:not([readonly])+label, input[type=time]:not(.browser-default):focus:not([readonly])+label, input[type=date]:not(.browser-default):focus:not([readonly])+label, input[type=datetime]:not(.browser-default):focus:not([readonly])+label, input[type=datetime-local]:not(.browser-default):focus:not([readonly])+label, input[type=tel]:not(.browser-default):focus:not([readonly])+label, input[type=number]:not(.browser-default):focus:not([readonly])+label, input[type=search]:not(.browser-default):focus:not([readonly])+label, textarea.materialize-textarea:focus:not([readonly])+label {
+    color: #9e9e9e;
+}
+
+input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):focus:not([readonly]), input[type=password]:not(.browser-default):focus:not([readonly]), input[type=email]:not(.browser-default):focus:not([readonly]), input[type=url]:not(.browser-default):focus:not([readonly]), input[type=time]:not(.browser-default):focus:not([readonly]), input[type=date]:not(.browser-default):focus:not([readonly]), input[type=datetime]:not(.browser-default):focus:not([readonly]), input[type=datetime-local]:not(.browser-default):focus:not([readonly]), input[type=tel]:not(.browser-default):focus:not([readonly]), input[type=number]:not(.browser-default):focus:not([readonly]), input[type=search]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid #000;
+    box-shadow: unset;
+}
+
+.botones-form {
+    display: flex;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.botones-form button {
+    background-color: $amarillo;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
 }

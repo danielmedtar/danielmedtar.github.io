@@ -81,9 +81,15 @@
       <h1 class="animate__animated animate__fadeInLeft">Daniel Medina</h1>
       <p class="parrafo-main"> - Front End Developer -</p>
 
-      <button class="animate__animated animate__bounceIn">
-        <a href="https://drive.google.com/file/d/1MUgbcr8wI3qIAy4WxeA3UP7gAMI0nqbK/view?usp=sharing" target="_blank">Ir al CV</a>
-      </button>
+      <div class="container-botones_cv">
+        <button class="animate__animated animate__bounceIn">
+          <a href="https://drive.google.com/file/d/1pP3KshfbXjOsvUDbyge-AtktouLfmGAG/view?usp=sharing" target="_blank">CV en Español</a>
+        </button>
+  
+        <button class="animate__animated animate__bounceIn">
+          <a href="https://drive.google.com/file/d/1aGmTfr8kNMtu0Y7ElK-zwujkkh52Cbnb/view?usp=sharing" target="_blank">English CV</a>
+        </button>
+      </div>
     </div>
   </main>
 
@@ -91,10 +97,11 @@
     <div class="container-secciones">
       <h2>Sobre mi</h2>
       <div class="container-secciones__textos">
-        <p>Hola gente, espero estén muy bien. Les cuento un poco acerca de mi: Aunque soy Abogado de profesión la cual ejercí por 7 años, desde chico siempre me interesó la tecnología ya que mi papá es Ingeniero en Sistemas. Siempre lo veía trabajando y me pasaba preguntándole sobre las cosas que hacía en la pantalla y en MSDOS en ese momento. Por esto mi relación con la tecnología y el mundo IT en general siempre fue cercana pero no me había atrevido a dar el salto.</p>
-        <p>Cuando emigré a Argentina en el 2017, decidí que era el momento de aprender cosas nuevas y hacer un cambio profesional. En ese instante obviamente me incliné por la tecnología, primero haciendo cursos básicos gratuitos de programación y Desarrollo Front End para explorar, los cuales posteriormente me llevaron a decidir que este sería el nuevo rumbo que debía darle a mi vida.</p>
-        <p>Actualmente, me desempeño como Jr IT Support Analyst en Dentsu International realizando el mantenimiento y actualización de 141 sitios web de una importante empresa del rubro automotriz, todo esto en conjunto con un equipo que incluye otros desarrolladores, diseñadores gráficos, copywriters y ejecutivos de cuentas. Además en mis tiempos libres también me desempeño como Tutor del curso de Desarrollo Web de CoderHouse.</p>
-        <p>Siempre tengo como norte el desempeñar mis labores de la mejor forma posible, con ganas de crecer, pero sobre todo de seguir aprendiendo día a día de cada persona y de cada experiencia.</p>                
+        <p>Hola a todos, Les cuento un poco acerca de mi: Soy Abogado de profesión, pero cuando emigré a Argentina en 2017, decidí dar un giro a mi carrera y me incliné por la tecnología, específicamente en el Desarrollo Web Front End, estando siempre dispuesto tanto a mantener las buenas prácticas de programación, como al aprendizaje constante.</p>
+
+        <p>Actualmente, me desempeño como IT Support Analyst en Dentsu International realizando el mantenimiento y actualización del contenido 141 sitios web de una importante empresa del rubro automotriz, todo esto en conjunto con un equipo que incluye otros desarrolladores, diseñadores gráficos, copywriters y ejecutivos de cuentas.</p>
+
+        <p>Además, me desempeño como Profesor del curso de Desarrollo Web de Coderhouse, lo que me motiva a estar siempre actualizado para brindarles una buena experiencia de aprendizaje a mis alumnos.</p>           
       </div>
     </div>
   </section>
@@ -103,7 +110,7 @@
     <div class="container-secciones">
       <h2>¿Qué hago?</h2>
       <div class="container-secciones__textos">
-        <p>Entre las tecnologías con las que más he trabajado están: HTML 5, CSS3, JavaScript, jQuery, Bootstrap, Materialize y SASS para todo lo relacionado con el desarrollo; GIT para control de versiones, y Github como repositorio de código on-line.</p>
+        <p>Entre las tecnologías con las que más he trabajado están: HTML 5, CSS3, JavaScript, jQuery, Bootstrap, Materialize y SASS para todo lo relacionado con el desarrollo; GIT para control de versiones, y Github como repositorio de código on-line y ahora, actualmente incursionando en el mundo de React JS.</p>
         <div class="carousel carousel-tech">
           <a class="carousel-item" href="#one!">
             <img src="img/html-5.svg" alt="logo html">
@@ -163,7 +170,7 @@
   <section id="contacto" class="padding-section fondo-blanco">
     <div class="container-secciones">
       <h2>Hablemos</h2>
-      <div class="container-secciones__textos">
+      <div class="container-secciones__textos container-secciones__textos-contacto">
         <p>Si quieres contactarme, puedes hacerlo por alguno de estos medios:</p>
 
         <div class="botones-contacto">
@@ -179,7 +186,28 @@
             <a href="https://www.linkedin.com/in/medinataribadaniel/" target="_blank">LinkedIn</a>
           </button>
         </div>        
+        
+        <p>O dejame un mensaje en el formulario:</p>
+        <form action="https://formspree.io/f/xjvlladv" method="POST">
+          <label for="nombre">Nombre y apellido</label>
+          <input type="text" placeholder="Tu nombre" id="nombre" name="name" required>
+
+          <label for="mail">Tu email</label>
+          <input type="email" name="email" id="mail" placeholder="Tu email" required>
+
+          <label for="telefono">Teléfono</label>
+          <input type="tel" name="phone" id="telefono" placeholder="Teléfono (opcional)">
+
+          <label for="mensaje">Tu Mensaje</label>
+          <textarea name="message" id="mensaje" placeholder="Dejame tu mensaje o solicitud de contacto"></textarea>
+
+          <div class="botones-form">
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpiar</button>
+          </div>
+        </form>
       </div>
+
     </div>
   </section>
 
@@ -236,7 +264,6 @@
 <!-------------------- PROPIOS -------------------->
   <script src="js/proyectos.js"></script>
   <script src="js/testimonios.js"></script>
-  <script src="js/index.js"></script>
-  
+  <script src="js/index.js"></script>  
 </body>
 </html>
