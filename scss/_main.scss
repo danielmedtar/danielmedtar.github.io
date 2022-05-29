@@ -1,6 +1,6 @@
 main {
     @extend %flex-columnCentrado;
-    background-color: $amarillo;
+    background-color: $principal;
     margin-top: 57px;
 }
 @media (min-width: 992px) {
@@ -38,7 +38,7 @@ h1 {
     font-weight: 500;
     font-size: 6rem;
     margin-bottom: 0;
-    color: $negro;
+    color: $secundario;
     text-decoration: underline 5px $blanco;
 }
 @media (min-width: 992px) {
@@ -52,7 +52,7 @@ h1 {
     font-style: italic;
     font-size: 3rem;
     margin-top: -15px;
-    color: $negro;
+    color: $secundario;
 }
 @media (min-width: 992px) {
     .parrafo-main {
@@ -66,7 +66,7 @@ button {
     border-radius: 20px;
     a {
         display: block;
-        color: $negro;
+        color: $secundario;
         font-family: $parrafos;
         font-size: 1.8rem;
         font-weight: 700;

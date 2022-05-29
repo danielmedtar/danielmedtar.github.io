@@ -36,7 +36,7 @@
     font-weight: 700;
     width: 100%;
     margin-bottom: 20px;
-    color: $negro;
+    color: $secundario;
 }
 @media (min-width: 992px) {
     .proyecto-nombre,
@@ -49,12 +49,12 @@
     gap: 30px;
 }
 .boton-link {
-    background-color: $amarillo;
+    background-color: $principal;
     border-radius: 20px;
     margin-top: 20px;
 }
 .boton-link a {
-    color: $negro;
+    color: $secundario;
     font-size: 1.4rem;
 }
 @media (min-width: 992px) {

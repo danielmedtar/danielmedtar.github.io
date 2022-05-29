@@ -13,7 +13,7 @@
 }
 .botones-contacto button {
     margin-bottom: 20px;
-    background-color: $amarillo;
+    background-color: $principal;
 }
 @media (min-width: 768px) {
     .botones-contacto button {
@@ -26,13 +26,13 @@
 }
 .subir {
     display: flex;
-    background-color: $amarillo;
+    background-color: $principal;
     padding: 10px;
     border-radius: 50%;
 }
 .subir .flecha {
     font-size: 3rem;
-    color: $negro;
+    color: $secundario;
 }
 
 form {
@@ -85,7 +85,7 @@ input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):
 }
 
 .botones-form button {
-    background-color: $amarillo;
+    background-color: $principal;
     padding: 10px 20px;
     font-size: 1.5rem;
     font-weight: bold;
