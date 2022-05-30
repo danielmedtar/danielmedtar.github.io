@@ -242,6 +242,11 @@ button a:hover {
     justify-content: space-between;
   }
 }
+.coderhouse {
+  color: #202030;
+  text-decoration: underline;
+}
+
 .carousel-tech {
   height: 200px;
 }
