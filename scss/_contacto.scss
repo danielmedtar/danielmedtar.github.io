@@ -1,3 +1,7 @@
+#contacto {
+    color: $secundario
+}
+
 .container-secciones__textos-contacto {
     @extend %flex-columnCentrado;
 }
@@ -5,6 +9,7 @@
 .botones-contacto {
     @extend %flex-columnCentrado;
 }
+
 @media (min-width: 768px) {
     .botones-contacto {
         flex-direction: row;
@@ -13,26 +18,36 @@
 }
 .botones-contacto button {
     margin-bottom: 20px;
-    background-color: $principal;
+    background-color: $secundario;
 }
+
 @media (min-width: 768px) {
     .botones-contacto button {
         margin-bottom: 0;
-        
     }
 }
+
+.botones-contacto button a {
+    color: $blanco;
+}
+
+.botones-contacto button a:hover {
+    color: $principal;
+}
+
 .botones-contacto button:last-child {
     margin-bottom: 0;
 }
 .subir {
     display: flex;
-    background-color: $principal;
+    background-color: $secundario;
     padding: 10px;
     border-radius: 50%;
+    border: solid 2px $blanco;
 }
 .subir .flecha {
     font-size: 3rem;
-    color: $secundario;
+    color: $blanco
 }
 
 form {
@@ -54,6 +69,7 @@ form {
 
 form label {
     font-size: 18px;
+    color: $secundario;
 }
 
 form input {
@@ -86,9 +102,15 @@ input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):
 }
 
 .botones-form button {
-    background-color: $principal;
+    background-color: $secundario;
     padding: 10px 20px;
     font-size: 1.5rem;
     font-weight: bold;
     cursor: pointer;
+    color: $blanco;
 }
+
+.botones-form button:hover {
+    color: $principal;
+}
+

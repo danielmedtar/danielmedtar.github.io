@@ -1,44 +1,34 @@
 main {
     @extend %flex-columnCentrado;
-    background-color: $principal;
+    background-color: $secundario;
     margin-top: 57px;
 }
-@media (min-width: 992px) {
-    main {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-}
+
 .avatar {
     @extend %size-s;
-    margin-bottom: 30px;
+    border-radius: 50%;
+    margin-top: 3rem;
 }
 @media (min-width: 768px) {
     .avatar {
         @include size-m;
-        margin-bottom: 0;
     }
 }
 @media (min-width: 992px) {
     .avatar {
         @include size-l;
-        margin-bottom: 0;
     }
 }
 .texto-main {
     @extend %flex-columnCentrado;
 }
-@media (min-width: 992px) {
-    .texto-main {
-        margin-right: 150px;
-    }
-}
+
 h1 {
     font-family: $titulos;
     font-weight: 500;
     font-size: 6rem;
     margin-bottom: 0;
-    color: $secundario;
+    color: $blanco;
     text-decoration: underline 5px $blanco;
 }
 @media (min-width: 992px) {
@@ -52,7 +42,7 @@ h1 {
     font-style: italic;
     font-size: 3rem;
     margin-top: -15px;
-    color: $secundario;
+    color: $blanco;
 }
 @media (min-width: 992px) {
     .parrafo-main {
@@ -73,7 +63,7 @@ button {
         padding: 10px 20px;
 
         &:hover {
-            color: $verde;
+            color: $gris;
             text-decoration: none;
         }
     }
@@ -101,4 +91,12 @@ button {
 .coderhouse {
     color: $secundario;
     text-decoration: underline;
+}
+
+#sobre-mi {
+    color: $secundario;
+}
+
+#que-hago {
+    color: $blanco;
 }

@@ -6,16 +6,16 @@
 }
 
 %size-s {
-    width: 400px;
-    height: 400px;
+    width: 25rem;
+    height: 25rem;
 }
 
 
 @mixin size-m {
-    width: 500px;
-    height: 500px;
+    width: 30rem;
+    height: 30rem;
 }
 @mixin size-l {
-    width: 600px;
-    height: 600px;
+    width: 40rem;
+    height: 40rem;
 }

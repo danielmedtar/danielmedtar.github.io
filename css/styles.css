@@ -18,8 +18,6 @@ h2 {
   margin-bottom: 30px;
   text-align: center;
   font-family: "Zilla Slab", serif;
-  color: #202030;
-  text-decoration: underline 5px #f9c610;
 }
 
 p {
@@ -50,6 +48,16 @@ p {
     font-size: 2.5rem;
   }
 }
+.fondo-blanco h2 {
+  color: #393839;
+  text-decoration: underline 0.5rem #848586;
+}
+
+.fondo-negro h2 {
+  color: #F7F7FF;
+  text-decoration: underline 0.5rem #848586;
+}
+
 .padding-section {
   width: 100%;
   padding: 30px;
@@ -68,12 +76,6 @@ p {
 }
 
 @media (min-width: 992px) {
-  .container-secciones {
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    align-items: baseline;
-  }
-
   .container-secciones__textos {
     display: flex;
     flex-direction: column;
@@ -89,20 +91,12 @@ p {
   background-color: rgba(132, 133, 134, 0.8549019608);
 }
 
+.fondo-negro {
+  background-color: #393839;
+}
+
 .iconify {
   font-size: 1.8rem;
-}
-
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background-color: rgba(132, 133, 134, 0.7058823529);
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #f9c610;
 }
 
 form, .botones-contacto, .container-secciones__textos-contacto, .card-proyectos, .texto-main, main {
@@ -113,8 +107,8 @@ form, .botones-contacto, .container-secciones__textos-contacto, .card-proyectos,
 }
 
 .avatar {
-  width: 400px;
-  height: 400px;
+  width: 25rem;
+  height: 25rem;
 }
 
 nav {
@@ -126,7 +120,7 @@ nav {
 
 .enlaces {
   font-size: 2rem;
-  color: #202030;
+  color: #393839;
   font-family: "Roboto", sans-serif;
 }
 
@@ -135,7 +129,7 @@ nav {
 }
 
 .sidenav-trigger {
-  color: #202030;
+  color: #393839;
 }
 
 .contenedor-enlaces {
@@ -157,37 +151,25 @@ nav {
 }
 
 main {
-  background-color: #f9c610;
+  background-color: #393839;
   margin-top: 57px;
 }
 
-@media (min-width: 992px) {
-  main {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
 .avatar {
-  margin-bottom: 30px;
+  border-radius: 50%;
+  margin-top: 3rem;
 }
 
 @media (min-width: 768px) {
   .avatar {
-    width: 500px;
-    height: 500px;
-    margin-bottom: 0;
+    width: 30rem;
+    height: 30rem;
   }
 }
 @media (min-width: 992px) {
   .avatar {
-    width: 600px;
-    height: 600px;
-    margin-bottom: 0;
-  }
-}
-@media (min-width: 992px) {
-  .texto-main {
-    margin-right: 150px;
+    width: 40rem;
+    height: 40rem;
   }
 }
 h1 {
@@ -195,7 +177,7 @@ h1 {
   font-weight: 500;
   font-size: 6rem;
   margin-bottom: 0;
-  color: #202030;
+  color: #F7F7FF;
   text-decoration: underline 5px #F7F7FF;
 }
 
@@ -210,7 +192,7 @@ h1 {
   font-style: italic;
   font-size: 3rem;
   margin-top: -15px;
-  color: #202030;
+  color: #F7F7FF;
 }
 
 @media (min-width: 992px) {
@@ -226,14 +208,14 @@ button {
 }
 button a {
   display: block;
-  color: #202030;
+  color: #393839;
   font-family: "Roboto", sans-serif;
   font-size: 1.8rem;
   font-weight: 700;
   padding: 10px 20px;
 }
 button a:hover {
-  color: #26532B;
+  color: #848586;
   text-decoration: none;
 }
 
@@ -256,8 +238,16 @@ button a:hover {
   }
 }
 .coderhouse {
-  color: #202030;
+  color: #393839;
   text-decoration: underline;
+}
+
+#sobre-mi {
+  color: #393839;
+}
+
+#que-hago {
+  color: #F7F7FF;
 }
 
 .carousel-tech {
@@ -281,6 +271,10 @@ button a:hover {
 
 .btn-floating:hover {
   background-color: unset;
+}
+
+#mis-proyectos {
+  color: #393839;
 }
 
 #container-proyectos {
@@ -318,7 +312,7 @@ button a:hover {
   font-weight: 700;
   width: 100%;
   margin-bottom: 20px;
-  color: #202030;
+  color: #393839;
 }
 
 @media (min-width: 992px) {
@@ -333,13 +327,13 @@ button a:hover {
 }
 
 .boton-link {
-  background-color: #f9c610;
+  background-color: #393839;
   border-radius: 20px;
   margin-top: 20px;
 }
 
 .boton-link a {
-  color: #202030;
+  color: #F7F7FF;
   font-size: 1.4rem;
 }
 
@@ -349,7 +343,7 @@ button a:hover {
   }
 }
 .boton-link a:hover {
-  color: unset;
+  color: #f9c610;
 }
 
 .img-portfolio {
@@ -363,6 +357,10 @@ button a:hover {
     height: 300px;
   }
 }
+#testimonios {
+  color: #F7F7FF;
+}
+
 .testimonios {
   display: flex;
 }
@@ -394,6 +392,10 @@ q {
   border-radius: 50%;
 }
 
+#contacto {
+  color: #393839;
+}
+
 @media (min-width: 768px) {
   .botones-contacto {
     flex-direction: row;
@@ -402,7 +404,7 @@ q {
 }
 .botones-contacto button {
   margin-bottom: 20px;
-  background-color: #f9c610;
+  background-color: #393839;
 }
 
 @media (min-width: 768px) {
@@ -410,20 +412,29 @@ q {
     margin-bottom: 0;
   }
 }
+.botones-contacto button a {
+  color: #F7F7FF;
+}
+
+.botones-contacto button a:hover {
+  color: #f9c610;
+}
+
 .botones-contacto button:last-child {
   margin-bottom: 0;
 }
 
 .subir {
   display: flex;
-  background-color: #f9c610;
+  background-color: #393839;
   padding: 10px;
   border-radius: 50%;
+  border: solid 2px #F7F7FF;
 }
 
 .subir .flecha {
   font-size: 3rem;
-  color: #202030;
+  color: #F7F7FF;
 }
 
 form {
@@ -442,6 +453,7 @@ form {
 }
 form label {
   font-size: 18px;
+  color: #393839;
 }
 
 form input {
@@ -474,11 +486,16 @@ input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):
 }
 
 .botones-form button {
-  background-color: #f9c610;
+  background-color: #393839;
   padding: 10px 20px;
   font-size: 1.5rem;
   font-weight: bold;
   cursor: pointer;
+  color: #F7F7FF;
+}
+
+.botones-form button:hover {
+  color: #f9c610;
 }
 
 footer {
@@ -487,9 +504,10 @@ footer {
 }
 footer p {
   text-align: center;
+  color: #F7F7FF;
 }
 footer a {
-  color: #202030;
+  color: #F7F7FF;
 }
 
 /*# sourceMappingURL=styles.css.map */

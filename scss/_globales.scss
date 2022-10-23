@@ -1,6 +1,6 @@
 
 $principal: #f9c610;
-$secundario: #202030;
+$secundario: #393839;
 $blanco: #F7F7FF;
 $verde: #26532B;
 $gris: #848586;
@@ -31,8 +31,6 @@ h2 {
     margin-bottom: 30px;
     text-align: center;
     font-family: $titulos;
-    color: $secundario;
-    text-decoration: underline 5px $principal;
 }
 p {
     font-size: 1.8rem;
@@ -63,6 +61,16 @@ p {
         }
 }
 
+.fondo-blanco h2 {
+    color: $secundario;
+    text-decoration: underline .5rem $gris;
+}
+
+.fondo-negro h2 {
+    color: $blanco;
+    text-decoration: underline .5rem $gris;
+}
+
 .padding-section {
     width: 100%;
     padding: 30px;
@@ -80,11 +88,7 @@ p {
 }
 
 @media (min-width: 992px) {
-    .container-secciones {
-        display: grid;
-        grid-template-columns: 1fr 4fr;
-        align-items: baseline;
-    }
+
     .container-secciones__textos {
         display: flex;
         flex-direction: column;
@@ -96,21 +100,13 @@ p {
     background-color: $blanco;
 }
 .fondo-gris {
-        background-color: #848586da;
-    }
+    background-color: #848586da;
+}
+
+.fondo-negro {
+    background-color: $secundario;
+}
     
 .iconify {
     font-size: 1.8rem;
-}
-
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-::-webkit-scrollbar-track {
-    background-color: $gris-opaco;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: $principal;
 }

@@ -1,3 +1,7 @@
+#mis-proyectos {
+    color: $secundario;
+}
+
 #container-proyectos {
     display: flex;
     flex-direction: column;
@@ -49,12 +53,12 @@
     gap: 30px;
 }
 .boton-link {
-    background-color: $principal;
+    background-color: $secundario;
     border-radius: 20px;
     margin-top: 20px;
 }
 .boton-link a {
-    color: $secundario;
+    color: $blanco;
     font-size: 1.4rem;
 }
 @media (min-width: 992px) {
@@ -63,7 +67,7 @@
     }
 }
 .boton-link a:hover {
-    color: unset;
+    color: $principal;
 }
 
 .img-portfolio {
