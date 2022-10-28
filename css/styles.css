@@ -191,14 +191,14 @@ h1 {
   font-weight: 100;
   font-style: italic;
   font-size: 3rem;
-  margin-top: -15px;
+  margin-top: 0;
   color: #F7F7FF;
 }
 
 @media (min-width: 992px) {
   .parrafo-main {
     font-size: 4rem;
-    margin-top: -20px;
+    margin-top: 0;
   }
 }
 button {
