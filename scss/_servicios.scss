@@ -1,20 +1,30 @@
-.carousel-tech {
-    height: 200px;
-}
-.carousel-tech .carousel-item>img {
-        width: 150px;
-        height: 150px;
-    }
-@media (min-width: 768px) {
-    .carousel-tech {
-        height: 200px;
-    }
-}
-.btn-floating {
-    background-color: unset;
-    box-shadow: none;
+.banner-techs {
+    @extend %flex-columnCentrado;
+    gap: 10px;
 }
 
-.btn-floating:hover {
-    background-color: unset;
+@media (min-width: 768px) {
+    .banner-techs {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+}
+
+@media (min-width: 992px) {
+    .banner-techs {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        align-items: center;
+        gap: 30px;
+    }
+}
+
+.banner {
+    @extend %flex-columnCentrado;
+}
+
+.banner img {
+    width: 150px;
+    height: 150px;
 }

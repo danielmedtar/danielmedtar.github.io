@@ -32,7 +32,6 @@ p {
     margin-bottom: 30px;
     text-align: center;
   }
-
   p {
     font-size: 2rem;
   }
@@ -43,7 +42,6 @@ p {
     margin-bottom: 0;
     text-align: center;
   }
-
   p {
     font-size: 2.5rem;
   }
@@ -99,7 +97,7 @@ p {
   font-size: 1.8rem;
 }
 
-form, .botones-contacto, .container-secciones__textos-contacto, .card-proyectos, .texto-main, main {
+form, .botones-contacto, .container-secciones__textos-contacto, .card-proyectos, .banner, .banner-techs, .texto-main, main {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -250,27 +248,28 @@ button a:hover {
   color: #F7F7FF;
 }
 
-.carousel-tech {
-  height: 200px;
-}
-
-.carousel-tech .carousel-item > img {
-  width: 150px;
-  height: 150px;
+.banner-techs {
+  gap: 10px;
 }
 
 @media (min-width: 768px) {
-  .carousel-tech {
-    height: 200px;
+  .banner-techs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
   }
 }
-.btn-floating {
-  background-color: unset;
-  box-shadow: none;
+@media (min-width: 992px) {
+  .banner-techs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    gap: 30px;
+  }
 }
-
-.btn-floating:hover {
-  background-color: unset;
+.banner img {
+  width: 150px;
+  height: 150px;
 }
 
 #mis-proyectos {
@@ -299,7 +298,6 @@ button a:hover {
   .card-proyectos:nth-child(odd) {
     margin-left: 80px;
   }
-
   .card-proyectos:last-of-type {
     margin: 0 auto;
   }
@@ -317,7 +315,7 @@ button a:hover {
 
 @media (min-width: 992px) {
   .proyecto-nombre,
-.proyecto-techs {
+  .proyecto-techs {
     font-size: 2rem;
   }
 }
