@@ -24,6 +24,17 @@
 }
 
 .banner img {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
+}
+
+@media (min-width: 768px) {
+    .banner img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+.banner p {
+    text-align: center;
 }
