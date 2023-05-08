@@ -1,0 +1,20 @@
+#main-thanks {
+    color: $blanco;
+    height: 100vh;
+    margin-top: 0;
+}
+
+#main-thanks h1,
+#main-thanks p {
+    text-decoration: none;
+    text-align: center;
+}
+
+#main-thanks a {
+    background-color: $blanco;
+    color: $secundario;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}

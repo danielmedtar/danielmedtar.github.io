@@ -493,8 +493,10 @@ input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):
   gap: 10px;
 }
 
-.botones-form button {
+.botones-form input {
   background-color: #393839;
+  border: none;
+  border-radius: 20px;
   padding: 10px 20px;
   font-size: 1.5rem;
   font-weight: bold;
@@ -502,8 +504,29 @@ input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):
   color: #F7F7FF;
 }
 
-.botones-form button:hover {
+.botones-form input:hover {
   color: #f9c610;
+}
+
+#main-thanks {
+  color: #F7F7FF;
+  height: 100vh;
+  margin-top: 0;
+}
+
+#main-thanks h1,
+#main-thanks p {
+  text-decoration: none;
+  text-align: center;
+}
+
+#main-thanks a {
+  background-color: #F7F7FF;
+  color: #393839;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 footer {

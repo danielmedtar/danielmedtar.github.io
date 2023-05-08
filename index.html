@@ -256,7 +256,7 @@
         </div>        
         
         <p>O dejame un mensaje en el formulario:</p>
-        <form action="https://formspree.io/f/xjvlladv" method="POST">
+        <form action="form.php" method="POST">
           <label for="nombre">Nombre y apellido</label>
           <input type="text" placeholder="Tu nombre" id="nombre" name="name" required>
 
@@ -270,8 +270,8 @@
           <textarea name="message" id="mensaje" placeholder="Dejame tu mensaje o solicitud de contacto"></textarea>
 
           <div class="botones-form">
-            <button type="submit">Enviar</button>
-            <button type="reset">Limpiar</button>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpiar formulario">
           </div>
         </form>
       </div>
