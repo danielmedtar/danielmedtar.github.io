@@ -493,7 +493,8 @@ input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):
   gap: 10px;
 }
 
-.botones-form input {
+.botones-form input,
+.botones-form button {
   background-color: #393839;
   border: none;
   border-radius: 20px;
@@ -503,8 +504,8 @@ input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):
   cursor: pointer;
   color: #F7F7FF;
 }
-
-.botones-form input:hover {
+.botones-form input:hover,
+.botones-form button:hover {
   color: #f9c610;
 }
 

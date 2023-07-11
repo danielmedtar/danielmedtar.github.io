@@ -101,7 +101,8 @@ input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):
     gap: 10px;
 }
 
-.botones-form input {
+.botones-form input,
+.botones-form button {
     background-color: $secundario;
     border: none;
     border-radius: 20px;
@@ -110,9 +111,9 @@ input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):
     font-weight: bold;
     cursor: pointer;
     color: $blanco;
-}
 
-.botones-form input:hover {
-    color: $principal;
+    &:hover {
+        color: $principal;
+    }
 }
 
