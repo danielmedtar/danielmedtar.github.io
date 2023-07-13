@@ -10,6 +10,16 @@
 
     gtag('config', 'G-5J4WPET5RS');
     </script>
+
+    <!-- captcha -->
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script>
+      function onSubmit(token) {
+        document.getElementById("form-contacto").submit();
+      }
+    </script>
+
+    <!-- METAS -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -256,7 +266,7 @@
         </div>        
         
         <p>O dejame un mensaje en el formulario:</p>
-        <form action="form.php" method="POST">
+        <form id="form-contacto" action="form.php" method="POST">
           <label for="nombre">Nombre y apellido</label>
           <input type="text" placeholder="Tu nombre" id="nombre" name="name" required>
 
@@ -270,7 +280,7 @@
           <textarea name="message" id="mensaje" placeholder="Dejame tu mensaje o solicitud de contacto"></textarea>
 
           <div class="botones-form">
-            <input type="submit" value="Enviar">
+            <input type="submit" value="Enviar" class="g-recaptcha" data-sitekey="6LeqJRUnAAAAANIIw8d6GdUva8-c5N4Pcqq3p5q3" data-callback='onSubmit' data-action='submit'>
             <input type="reset" value="Limpiar formulario">
           </div>
         </form>
