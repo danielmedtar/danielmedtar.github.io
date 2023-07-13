@@ -248,6 +248,11 @@ button a:hover {
   color: #F7F7FF;
 }
 
+.boton-fijo {
+  left: 23px;
+  right: unset;
+}
+
 .banner-techs {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
