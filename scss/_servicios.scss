@@ -20,7 +20,7 @@
 }
 
 .banner {
-    @extend %flex-columnCentrado;
+    @include flex-columnCentrado;
 }
 
 .banner img {

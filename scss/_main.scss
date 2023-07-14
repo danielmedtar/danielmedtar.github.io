@@ -1,59 +1,65 @@
 main {
-    @extend %flex-columnCentrado;
-    background-color: $secundario;
-    margin-top: 57px;
+    @include flex-columnCentrado;
+    background-color: $primario;
 }
 
-.avatar {
-    @extend %size-s;
-    border-radius: 50%;
-    margin-top: 3rem;
-}
-@media (min-width: 768px) {
-    .avatar {
-        @include size-m;
+@include large-screen {
+    main {
+        @include flex-centrado;
+        gap: 10rem;
     }
 }
+.avatar {
+    @include size(100%, inherit)
+}
+
 @media (min-width: 992px) {
     .avatar {
-        @include size-l;
+        @include size(40rem, 40rem);
     }
 }
 .texto-main {
-    @extend %flex-columnCentrado;
+    @include flex-columnCentrado;
 }
 
 h1 {
     font-family: $titulos;
     font-weight: 500;
-    font-size: 6rem;
+    font-size: 4rem;
     margin-bottom: 0;
-    color: $blanco;
-    text-decoration: underline 5px $blanco;
+    color: $secundario;
+    text-decoration: underline 5px $secundario;
 }
-@media (min-width: 992px) {
+
+@include medium-screen {
     h1 {
-        font-size: 8.5rem;
+        font-size: 6rem;
     }
 }
+
 .parrafo-main {
     font-family: $parrafos;
     font-weight: 100;
     font-style: italic;
     font-size: 3rem;
     margin-top: 0;
-    color: $blanco;
+    color: $secundario;
 }
-@media (min-width: 992px) {
+
+@include medium-screen {
     .parrafo-main {
         font-size: 4rem;
         margin-top: 0;
-    }    
+    }
 }
+
 button {
-    background-color: $blanco;
-    border: none;
-    border-radius: 20px;
+    background-color: $primario;
+    border: solid 1px $secundario;
+    transition: all .3s;
+    &:hover {
+        background-color: $secundario;
+    }
     a {
         display: block;
         color: $secundario;
@@ -61,14 +67,17 @@ button {
         font-size: 1.8rem;
         font-weight: 700;
         padding: 10px 20px;
+        transition: all .3s;
 
         &:hover {
-            color: $gris;
+            border: none;
+            color: $primario;
             text-decoration: none;
         }
     }
 }
-@media (min-width: 992px) {
+
+@include large-screen {
     button {
         margin-bottom: 0;
     }
@@ -81,7 +90,7 @@ button {
     margin-bottom: 40px;
 }
 
-@media (min-width: 1080px) {
+@include medium-screen {
     .container-botones_cv {
         flex-direction: row;
         justify-content: space-between;
@@ -89,16 +98,16 @@ button {
 }
 
 .coderhouse {
-    color: $secundario;
+    color: $primario;
     text-decoration: underline;
 }
 
 #sobre-mi {
-    color: $secundario;
+    color: $primario;
 }
 
 #que-hago {
-    color: $blanco;
+    color: $secundario;
 }
 
 .boton-fijo {

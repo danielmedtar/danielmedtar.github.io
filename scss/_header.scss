@@ -1,19 +1,19 @@
 nav {
-    position: fixed;
+    position: sticky;
     top: 0;
     z-index: 1;
-    background-color: $blanco;
+    background-color: $secundario;
 }
 .enlaces {
     font-size: 2rem;
-    color: $secundario;
+    color: $primario;
     font-family: $parrafos;
 }
 .sidenav {
     width: 200px;
 }
 .sidenav-trigger {
-    color: $secundario;
+    color: $primario;
 }
 .contenedor-enlaces {
     display: flex;

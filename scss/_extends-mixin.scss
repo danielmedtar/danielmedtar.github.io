@@ -1,6 +1,35 @@
-%flex-columnCentrado {
+@mixin medium-screen {
+    @media (min-width: $medium) {
+        @content;
+    }
+}
+
+@mixin large-screen {
+    @media (min-width: $large) {
+        @content;
+    }
+}
+
+@mixin size($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin size-l {
+    width: 40rem;
+    height: 40rem;
+}
+
+@mixin flex-columnCentrado {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-centrado {
+    display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
 }
@@ -10,12 +39,3 @@
     height: 25rem;
 }
 
-
-@mixin size-m {
-    width: 30rem;
-    height: 30rem;
-}
-@mixin size-l {
-    width: 40rem;
-    height: 40rem;
-}

@@ -1,16 +1,3 @@
-
-$principal: #f9c610;
-$secundario: #393839;
-$blanco: #F7F7FF;
-$verde: #26532B;
-$gris: #848586;
-$gris-opaco: #848586b4;
-
-
-$titulos: 'Zilla Slab', serif;
-$parrafos: 'Roboto', sans-serif;
-
-
 html {
     font-size: 62.5%;
     box-sizing: border-box;
@@ -38,8 +25,7 @@ p {
     margin-bottom: 20px;
 }
 
-
-@media (min-width: 768px) {
+@include medium-screen {
     h2 {
         font-size: 3rem;
         margin-bottom: 30px;
@@ -50,36 +36,36 @@ p {
     }
 }
 
-@media (min-width: 992px) {
-        h2 {
-            font-size: 3.5rem;
-            margin-bottom: 0;
-            text-align: center;
-        }
-        p {
-            font-size: 2.5rem;
-        }
+@include large-screen {
+    h2 {
+        font-size: 3.5rem;
+        margin-bottom: 0;
+        text-align: center;
+    }
+    p {
+        font-size: 2.5rem;
+    }
 }
 
 .fondo-blanco h2 {
-    color: $secundario;
-    text-decoration: underline .5rem $gris;
+    color: $primario;
 }
 
 .fondo-negro h2 {
-    color: $blanco;
-    text-decoration: underline .5rem $gris;
+    color: $secundario;
 }
 
 .padding-section {
     width: 100%;
     padding: 30px;
 }
-@media (min-width: 992px) {
+
+@include large-screen {
     .padding-section {
         padding: 50px;
     }
 }
+
 .container-secciones {
     display: flex;
     flex-direction: column;
@@ -87,8 +73,7 @@ p {
     align-items: center;
 }
 
-@media (min-width: 992px) {
-
+@include large-screen {
     .container-secciones__textos {
         display: flex;
         flex-direction: column;
@@ -96,15 +81,16 @@ p {
         justify-content: center;
     }
 }
+
 .fondo-blanco {
-    background-color: $blanco;
+    background-color: $secundario;
 }
 .fondo-gris {
     background-color: #848586da;
 }
 
 .fondo-negro {
-    background-color: $secundario;
+    background-color: $primario;
 }
     
 .iconify {

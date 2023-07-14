@@ -1,5 +1,5 @@
 #mis-proyectos {
-    color: $secundario;
+    color: $primario;
 }
 
 #container-proyectos {
@@ -17,7 +17,7 @@
 }
 
 .card-proyectos {
-    @extend %flex-columnCentrado;
+    @include flex-columnCentrado;
     &:last-of-type {
         margin-bottom: 0;
     }
@@ -40,7 +40,7 @@
     font-weight: 700;
     width: 100%;
     margin-bottom: 20px;
-    color: $secundario;
+    color: $primario;
 }
 @media (min-width: 992px) {
     .proyecto-nombre,
@@ -54,20 +54,27 @@
 }
 .boton-link {
     background-color: $secundario;
-    border-radius: 20px;
+    border: solid 1px $primario;
     margin-top: 20px;
+
+    &:hover {
+        background-color: $primario;
+        border: none;
+    }
 }
 .boton-link a {
-    color: $blanco;
+    color: $primario;
     font-size: 1.4rem;
+
+    &:hover {
+        color: $secundario;
+    }
 }
+
 @media (min-width: 992px) {
     .boton-link a {
         font-size: 2rem;
     }
-}
-.boton-link a:hover {
-    color: $principal;
 }
 
 .img-portfolio {

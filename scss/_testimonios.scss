@@ -1,5 +1,5 @@
 #testimonios {
-  color: $blanco;
+  color: $secundario;
 }
 
 .testimonios {
@@ -10,11 +10,11 @@ blockquote {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-color: #F9C80E;
+    border-color: $secundario;
     margin-bottom: 60px;
 }
 
-@media (min-width: 992px) {
+@include large-screen {
   blockquote {
     margin-top: 30px;
     display: grid;
@@ -22,6 +22,7 @@ blockquote {
     gap: 40px;
     }
 }
+
 q {
   font-size: 1.8rem;
 }

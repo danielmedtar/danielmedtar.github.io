@@ -1,13 +1,13 @@
 #contacto {
-    color: $secundario
+    color: $primario
 }
 
 .container-secciones__textos-contacto {
-    @extend %flex-columnCentrado;
+    @include flex-columnCentrado;
 }
 
 .botones-contacto {
-    @extend %flex-columnCentrado;
+    @include flex-columnCentrado;
 }
 
 @media (min-width: 768px) {
@@ -19,6 +19,12 @@
 .botones-contacto button {
     margin-bottom: 20px;
     background-color: $secundario;
+    border: solid 1px $primario;
+
+    &:hover {
+        background-color: $primario;
+        border: none;
+    }
 }
 
 @media (min-width: 768px) {
@@ -28,11 +34,11 @@
 }
 
 .botones-contacto button a {
-    color: $blanco;
-}
+    color: $primario;
 
-.botones-contacto button a:hover {
-    color: $principal;
+    &:hover {
+        color: $secundario;
+    }
 }
 
 .botones-contacto button:last-child {
@@ -40,18 +46,19 @@
 }
 .subir {
     display: flex;
-    background-color: $secundario;
+    background-color: $primario;
     padding: 10px;
     border-radius: 50%;
-    border: solid 2px $blanco;
+    border: solid 2px $secundario;
 }
+
 .subir .flecha {
     font-size: 3rem;
-    color: $blanco
+    color: $secundario
 }
 
 form {
-    @extend %flex-columnCentrado;
+    @include flex-columnCentrado;
     width: 100%;
 }
 
@@ -69,7 +76,7 @@ form {
 
 form label {
     font-size: 18px;
-    color: $secundario;
+    color: $primario;
 }
 
 form input {
@@ -103,16 +110,22 @@ input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):
 
 .botones-form input {
     background-color: $secundario;
-    border: none;
-    border-radius: 20px;
+    border: solid 1px $primario;
     padding: 10px 20px;
     font-size: 1.5rem;
     font-weight: bold;
     cursor: pointer;
-    color: $blanco;
+    color: $primario;
+    transition: all .3s;
+
+    &:hover {
+        background-color: $primario;
+        color: $secundario;
+        border: none;
+    }
 }
 
-.botones-form input:hover {
-    color: $principal;
-}
+// .botones-form input:hover {
+//     color: $principal;
+// }
 
