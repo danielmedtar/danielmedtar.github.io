@@ -38,7 +38,7 @@ function muestraTestimonios(testimonios) {
         contenedorTestimonios.append(`
         <blockquote>
             <a href="${testimonio.link}" target="_blank">
-                <img class="img-testimonio" src="${testimonio.img}" alt="${testimonio.alt}">
+                <img class="img-testimonio" src="${testimonio.img}" alt="${testimonio.alt}" title="${testimonio.alt}">
             </a>
             <h3>${testimonio.nombre}</h3>             
             <q>${testimonio.palabras}</q>

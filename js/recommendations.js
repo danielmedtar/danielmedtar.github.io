@@ -1,8 +1,9 @@
 let testimonios = [
-    {id: 1, nombre: "Nicolas Seguro", palabras: "Dani is always willing to share his experience and time. He knows how to work in a team and create a comfortable environment. He is flexible and focused", img: 'img/nicolas.jpg',  alt: 'imagen testimonio', link: 'https://www.linkedin.com/in/nicol%C3%A1s-seguro/'},
-    {id: 2, nombre: "Florencia Stranges", palabras: "I was able to be in the same work group with Daniel and he is a great colleague, very responsible and proactive at work. He is a team person, always ready to help and never has a bad answer for others.", img: 'img/florencia.jpg',  alt: 'imagen testimonio', link: 'https://www.linkedin.com/in/florenciastranges/'},
-    {id: 3, nombre: "Federico Castro", palabras: "Daniel is a solid professional. Their contributions in class enrich the teaching and learning of students. His patience and pro-activity stand out to resolve everything quickly and effectively. Nice to be your partner", img: 'img/federico.jpg',  alt: 'imagen testimonio', link: 'https://www.linkedin.com/in/castro-federico/'},
-    {id: 4, nombre: "Luciano Giraudi", palabras: "I have the pleasure of working with Daniel in the same group of tutors, he has a great vocation for teaching and develops with complete professionalism in the tasks assigned to him", img: 'img/luciano.jpg',  alt: 'imagen testimonio', link: 'https://www.linkedin.com/in/lucianogiraudi/'}
+    {id: 1, nombre: "Lucila López", palabras: "Daniel is a true model of commitment. His tireless dedication and passion for the work he does are evident in every project we share together. He is always willing to come up with creative solutions, which makes him a great team member! His positive approach to challenges and his willingness to help others overcome obstacles demonstrate his admirable character and ability to motivate those around him. He is always willing to share his experience and provide guidance to those looking to learn and grow. He has great teamwork skills, understands the importance of collaboration, and an ability to adapt and contribute to any group dynamic. Dani will surely continue to be successful and leave a great impression in everything he undertakes!", img: 'img/lucila-lopez.webp',  alt: 'Lucila López', link: 'https://www.linkedin.com/in/lucilalopezabelenda/'},
+
+    {id: 2, nombre: "Florencia Stranges", palabras: "I had the opportunity to work with Dani in two different companies and he is a great colleague. He is very professional, kind and respectful. He has great knowledge in the area and can tackle new challenges in an exceptional way. He is always looking for innovative solutions and is able to adapt quickly to changes. He works very well in a team. He have the ability to listen to the perspectives of others and contribute valuable ideas. Anyone would be very happy to have him on their team!", img: 'img/florencia-stranges.webp',  alt: 'Florencia Stranges', link: 'https://www.linkedin.com/in/florenciastranges/'},
+    {id: 3, nombre: "Eugenia Aury", palabras: "Dani is an excellent professional and a great colleague. A very efficient person, detail-oriented, reliable and willing to provide help and support to whoever needs it. His work is impeccable and he is always incorporating new knowledge and tools. Working with him is very rewarding and fun.", img: 'img/eugenia-aury.webp',  alt: 'Eugenia Aury', link: 'https://www.linkedin.com/in/eugenia-aury/'},
+    {id: 4, nombre: "Agustina Parra", palabras: "Something that I value about Dani is his proactive attitude to solve his tasks. I highlight his professionalism and commitment when tackling new challenges. It was a pleasure to have worked with him.", img: 'img/agustina-parra.webp',  alt: 'Agustina Parra', link: 'https://www.linkedin.com/in/parraagustina/'},
 ]
 
 const contenedorTestimonios = $('#container-testimonios')
@@ -15,7 +16,7 @@ function muestraTestimonios(testimonios) {
         contenedorTestimonios.append(`
         <blockquote class="wow animate__animated animate__zoomIn">
             <a href="${testimonio.link}" target="_blank">
-                <img class="img-testimonio" src="${testimonio.img}" alt="${testimonio.alt}">
+                <img class="img-testimonio" src="${testimonio.img}" alt="${testimonio.alt}" title="${testimonio.alt}">
             </a>
             <h3>${testimonio.nombre}</h3>             
             <q>${testimonio.palabras}</q>
