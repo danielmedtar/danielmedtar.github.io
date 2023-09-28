@@ -590,7 +590,7 @@ footer a {
 }
 
 #body-404 {
-  background-color: #393839;
+  background-color: #126762;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -604,6 +604,7 @@ footer a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: unset;
 }
 
 .titulo-error, .parrafo-error {
