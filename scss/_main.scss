@@ -125,12 +125,6 @@ button {
     font-size: 1.8rem;
 }
 
-// @include medium-screen {
-//     .lista-tareas li {
-//         font-size: 1.5rem;
-//     }
-// }
-
 @include large-screen {
     .lista-tareas li {
         font-size: 2rem;

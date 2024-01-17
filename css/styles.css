@@ -95,6 +95,10 @@ p {
   font-size: 1.8rem;
 }
 
+strong {
+  font-weight: 700;
+}
+
 nav {
   position: sticky;
   top: 0;
