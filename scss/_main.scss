@@ -115,10 +115,14 @@ button {
     right: unset;
 }
 
+.lista-tareas {
+    max-width: 75ch;
+    margin: 0 auto;
+}
+
 .lista-tareas li {
     list-style-type: disc!important;
-    font-size: 1.7rem;
-    margin-left: 50px;
+    font-size: 1.8rem;
 }
 
 // @include medium-screen {
