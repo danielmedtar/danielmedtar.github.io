@@ -257,6 +257,22 @@ button a:hover {
   right: unset;
 }
 
+.lista-tareas li {
+  list-style-type: disc !important;
+  font-size: 1.3rem;
+  margin-left: 50px;
+}
+
+@media (min-width: 768px) {
+  .lista-tareas li {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 992px) {
+  .lista-tareas li {
+    font-size: 2rem;
+  }
+}
 .banner-techs {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
