@@ -259,15 +259,10 @@ button a:hover {
 
 .lista-tareas li {
   list-style-type: disc !important;
-  font-size: 1.3rem;
+  font-size: 1.7rem;
   margin-left: 50px;
 }
 
-@media (min-width: 768px) {
-  .lista-tareas li {
-    font-size: 1.5rem;
-  }
-}
 @media (min-width: 992px) {
   .lista-tareas li {
     font-size: 2rem;

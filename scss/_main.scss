@@ -117,15 +117,15 @@ button {
 
 .lista-tareas li {
     list-style-type: disc!important;
-    font-size: 1.3rem;
+    font-size: 1.7rem;
     margin-left: 50px;
 }
 
-@include medium-screen {
-    .lista-tareas li {
-        font-size: 1.5rem;
-    }
-}
+// @include medium-screen {
+//     .lista-tareas li {
+//         font-size: 1.5rem;
+//     }
+// }
 
 @include large-screen {
     .lista-tareas li {
